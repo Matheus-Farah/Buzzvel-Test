@@ -17,24 +17,24 @@ export function Header() {
           <ul className="flex gap-8">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link
+                <a
                   href={link.href}
                   className="text-muted hover:text-ink text-sm/6 transition-colors"
                 >
                   {link.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
         </nav>
 
         <div className="hidden items-center gap-2 justify-self-end lg:flex">
-          <Link
+          <a
             href="#login"
             className="text-muted hover:text-ink px-4 py-2.5 text-sm/6 transition-colors"
           >
             Log in
-          </Link>
+          </a>
 
           <ButtonLink href="#courses">Start learning</ButtonLink>
         </div>

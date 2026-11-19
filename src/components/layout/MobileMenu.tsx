@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useId, useState } from "react";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import type { NavLink } from "@/data/navigation";
@@ -49,25 +48,21 @@ export function MobileMenu({ links }: MobileMenuProps) {
           <ul className="flex flex-col px-5 py-2">
             {links.map((link) => (
               <li key={link.href}>
-                <Link
-                  href={link.href}
-                  onClick={closeMenu}
-                  className="text-ink block py-3 text-base"
-                >
+                <a href={link.href} onClick={closeMenu} className="text-ink block py-3 text-base">
                   {link.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
 
           <div className="border-line flex flex-col gap-2 border-t px-5 py-4">
-            <Link
+            <a
               href="#login"
               onClick={closeMenu}
               className="text-muted py-2.5 text-center text-sm/6"
             >
               Log in
-            </Link>
+            </a>
 
             <ButtonLink href="#courses" onClick={closeMenu}>
               Start learning

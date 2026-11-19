@@ -1,16 +1,15 @@
-import Link from "next/link";
 import type { ComponentProps } from "react";
 
 type ButtonVariant = "primary" | "secondary";
 type ButtonSize = "md" | "lg";
 
-type ButtonLinkProps = ComponentProps<typeof Link> & {
+type ButtonLinkProps = ComponentProps<"a"> & {
   variant?: ButtonVariant;
   size?: ButtonSize;
 };
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: "bg-primary text-white hover:bg-primary/90",
+  primary: "border-primary bg-primary text-white hover:bg-primary/90",
   secondary: "border-line bg-white text-ink hover:border-ink/30",
 };
 
@@ -26,7 +25,7 @@ export function ButtonLink({
   ...props
 }: ButtonLinkProps) {
   return (
-    <Link
+    <a
       className={`inline-flex items-center justify-center rounded-lg border text-sm/6 font-bold transition-colors ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
       {...props}
     />

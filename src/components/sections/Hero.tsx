@@ -11,7 +11,7 @@ const avatars = [
 
 export function Hero() {
   return (
-    <section aria-labelledby="hero-title" className="overflow-x-clip py-10 lg:py-25">
+    <section aria-labelledby="hero-title" className="overflow-x-clip py-15 lg:py-25">
       <Container className="flex flex-col-reverse gap-10 lg:flex-row lg:items-center lg:justify-between">
         <div className="lg:max-w-140">
           <p className="text-primary text-xs font-semibold tracking-[0.12em] uppercase">
@@ -26,11 +26,11 @@ export function Hero() {
           </h1>
 
           <p className="text-muted mt-6 text-base/[26px] lg:max-w-120 lg:text-lg/7">
-            Practical courses taught by people who do the work everyday. Learn design, technology,
-            business and more - one focused lesson at a time.
+            Practical courses taught by people who do the work every day. Learn design, technology,
+            business and more — one focused lesson at a time.
           </p>
 
-          <div className="felex-col mt-8 flex gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href="#courses" size="lg">
               Explore courses
             </ButtonLink>
@@ -48,7 +48,7 @@ export function Hero() {
                   alt={avatar.alt}
                   width={32}
                   height={32}
-                  className="broder-cream bg-primary-light size-8 rounded-full border-2 object-cover"
+                  className="border-cream bg-primary-light size-8 rounded-full border-2 object-cover"
                 />
               ))}
             </div>
