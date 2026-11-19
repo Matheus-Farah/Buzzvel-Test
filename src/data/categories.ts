@@ -25,7 +25,7 @@ export const categories: Category[] = [
     href: "#featured-course",
   },
   {
-    number: "01",
+    number: "04",
     title: "Creative",
     description: "Explore new ways to communicate, create and tell stories.",
     href: "#featured-course",

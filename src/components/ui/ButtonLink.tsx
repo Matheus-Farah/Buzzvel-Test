@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react";
 
-type ButtonVariant = "primary" | "secondary";
+type ButtonVariant = "primary" | "secondary" | "accent";
 type ButtonSize = "md" | "lg";
 
 type ButtonLinkProps = ComponentProps<"a"> & {
@@ -11,6 +11,7 @@ type ButtonLinkProps = ComponentProps<"a"> & {
 const variantStyles: Record<ButtonVariant, string> = {
   primary: "border-primary bg-primary text-white hover:bg-primary/90",
   secondary: "border-line bg-white text-ink hover:border-ink/30",
+  accent: "border-yellow bg-yellow text-ink hover:bg-yellow/85",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
