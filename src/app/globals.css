@@ -8,6 +8,9 @@
   --color-muted: #656770;
   --color-cream: #f9f8f3;
   --color-line: #dbdfeb;
+  --color-primary-light: #e2e8ff;
+  --color-orange: #ffcb9f;
+  --color-yellow: #ffee7e;
 
   /* Fonts - the variables come from next/font in layout.tsx*/
 
