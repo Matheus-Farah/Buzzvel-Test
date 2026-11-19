@@ -1,17 +1,12 @@
+import { Header } from "@/components/layout/Header";
+
 export default function Home() {
   return (
-    <main className="p-10">
-      <p className="text-primary text-xs font-semibold tracking-[0.12em] uppercase">
-        Learn at your own pace
-      </p>
-
-      <h1 className="font-heading mt-4 text-6xl font-extrabold tracking-tight">
-        Build skills that actually move you forward.
-      </h1>
-
-      <p className="text-muted mt-4 text-lg">
-        Practical courses taught by people who do the work every day.
-      </p>
-    </main>
+    <>
+      <Header />
+      <main className="h-[200vh] p-10">
+        <p>Page content goes here;</p>
+      </main>
+    </>
   );
 }
