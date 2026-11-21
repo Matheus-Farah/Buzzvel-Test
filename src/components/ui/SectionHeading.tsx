@@ -4,6 +4,7 @@ type SectionHeadingProps = {
   titleId: string;
   description?: string;
   tone?: "default" | "inverse";
+  align?: "left" | "center";
   className?: string;
 };
 
@@ -13,14 +14,15 @@ export function SectionHeading({
   titleId,
   description,
   tone = "default",
+  align = "left",
   className = "",
 }: SectionHeadingProps) {
   const isInverse = tone === "inverse";
 
   return (
-    <div className={`max-w-140 ${className}`}>
+    <div className={`max-w-140 ${align === "center" ? "mx-auto text-center" : ""} ${className}`}>
       <p
-        className={`text-primary text-xs font-semibold tracking-[0.12em] uppercase ${isInverse ? "text-white" : "text-primary"}`}
+        className={`text-xs font-semibold tracking-[0.12em] uppercase ${isInverse ? "text-white" : "text-primary"}`}
       >
         {eyebrow}
       </p>
@@ -33,9 +35,7 @@ export function SectionHeading({
       </h2>
 
       {description && (
-        <p
-          className={`text-muted mt-4 text-base/6.5 lg:text-lg/7 ${isInverse ? "text-white" : "text-muted"}`}
-        >
+        <p className={`mt-4 text-base/6.5 lg:text-lg/7 ${isInverse ? "text-white" : "text-muted"}`}>
           {description}
         </p>
       )}

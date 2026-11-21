@@ -4,15 +4,18 @@
   /* Colors - named after the Figma variables*/
 
   --color-primary: #3157f6;
+  --color-primary-light: #e2e8ff;
   --color-ink: #171b2c;
   --color-muted: #656770;
   --color-cream: #f9f8f3;
   --color-line: #dbdfeb;
-  --color-primary-light: #e2e8ff;
   --color-orange: #ffcb9f;
   --color-yellow: #ffee7e;
+  --color-yellow-light: #fff1c2;
+  --color-yellow-dark: #e9d659;
   --color-subtle: #6d7384;
   --color-soft-white: #e7e7ec;
+  --color-coral: #ff704d;
 
   /* Fonts - the variables come from next/font in layout.tsx*/
 

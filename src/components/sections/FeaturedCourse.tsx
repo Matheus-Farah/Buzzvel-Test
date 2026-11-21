@@ -12,7 +12,7 @@ export function FeaturedCourse() {
     <section
       id="featured-course"
       aria-labelledby="featured-course-title"
-      className="bg-primary lg:py25 py-15 text-white [&_*:focus-visible]:outline-white"
+      className="bg-primary py-15 text-white lg:py-25 [&_*:focus-visible]:outline-white"
     >
       <Container className="grid items-center gap-10 lg:grid-cols-2 lg:gap-11">
         <div className="relative">
@@ -42,12 +42,12 @@ export function FeaturedCourse() {
           <p className="mt-5 text-base/7">{description}</p>
 
           <p className="mt-6 text-base/7">
-            with {instructor.name} . {instructor.role}
+            with {instructor.name} · {instructor.role}
           </p>
 
           <ul aria-label="Course details" className="mt-6 flex flex-wrap gap-3">
             {details.map((detail) => (
-              <li key={detail} className="border-line bprder rounded-lg px-3.5 py-1.5 text-sm/6">
+              <li key={detail} className="border-line rounded-lg border px-3.5 py-1.5 text-sm/6">
                 {detail}
               </li>
             ))}
