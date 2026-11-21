@@ -9,7 +9,7 @@ export function HowItWorks() {
       <Container>
         <SectionHeading
           eyebrow="How Luma Works"
-          title="Less borwsing. More learning."
+          title="Less browsing. More learning."
           titleId="how-it-works-title"
           align="center"
         />
