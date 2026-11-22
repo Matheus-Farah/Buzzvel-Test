@@ -3,8 +3,13 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { footerGroups } from "@/data/footer";
 
-export function Footer() {
-  const currentYear = new Date().getFullYear();
+async function getCurrentYear() {
+  "use cache";
+  return new Date().getFullYear();
+}
+
+export async function Footer() {
+  const currentYear = await getCurrentYear();
 
   return (
     <footer className="bg-ink pt-20 pb-10">
@@ -13,7 +18,7 @@ export function Footer() {
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="logo.svg"
+                src="/logo.svg"
                 alt="Luma"
                 width={54}
                 height={17}

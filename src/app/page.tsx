@@ -1,5 +1,6 @@
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { SkipLink } from "@/components/layout/SkipLink";
 import { Categories } from "@/components/sections/Categories";
 import { Community } from "@/components/sections/Community";
 import { Contact } from "@/components/sections/Contact";
@@ -12,8 +13,9 @@ import { Testimonial } from "@/components/sections/Testimonial";
 export default function Home() {
   return (
     <>
+      <SkipLink />
       <Header />
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1} className="focus:outline-none">
         <Hero />
         <Categories />
         <FeaturedCourse />
@@ -22,8 +24,8 @@ export default function Home() {
         <Community />
         <Contact />
         <FinalCta />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
