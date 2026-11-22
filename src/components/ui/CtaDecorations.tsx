@@ -11,7 +11,7 @@ export function CtaDecorations() {
         <div className="bg-orange absolute top-52 left-34 size-10 rounded-full" />
         <div className="bg-orange absolute top-90 left-14 size-30 rounded-full" />
         <div className="bg-orange absolute top-59 -left-3 size-14 -rotate-12 rounded-lg" />
-        <div className="bg-orange absolute top-10 left-[68%] size-8 rounded-full border-2" />
+        <div className="border-orange absolute top-10 left-[68%] size-8 rounded-full border-2" />
       </div>
     </div>
   );
