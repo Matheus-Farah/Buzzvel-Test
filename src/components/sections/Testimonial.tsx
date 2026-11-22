@@ -12,7 +12,7 @@ export function Testimonial() {
         <figure className="max-w-150">
           <QuoteIcon className="text-primary" />
 
-          <blockquote className="font-heading mt-4 text-2xl/9 font-semibold tracking-[-0.6px] lg:text-[-30px]/11 lg:tracking-[-0.75px]">
+          <blockquote className="font-heading lg:text-[ 30px]/11 mt-4 text-2xl/9 font-semibold tracking-[-0.6px] lg:tracking-[-0.75px]">
             <p>{quote}</p>
           </blockquote>
 
