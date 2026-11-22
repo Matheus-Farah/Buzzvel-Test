@@ -16,6 +16,7 @@
   --color-subtle: #6d7384;
   --color-soft-white: #e7e7ec;
   --color-coral: #ff704d;
+  --color-danger: #c0362c;
 
   /* Fonts - the variables come from next/font in layout.tsx*/
 

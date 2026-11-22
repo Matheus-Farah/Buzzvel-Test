@@ -3,14 +3,14 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-export function Commnunity() {
+export function Community() {
   return (
     <section id="community" aria-labelledby="community-title" className="py-15 lg:py-25">
       <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div className="flex flex-col items-start gap-8">
           <SectionHeading
             eyebrow="The people"
-            title="Meet international studnets & teachers"
+            title="Meet international students & teachers"
             titleId="community-title"
           />
 

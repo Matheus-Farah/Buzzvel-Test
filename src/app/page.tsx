@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Categories } from "@/components/sections/Categories";
-import { Commnunity } from "@/components/sections/Community";
+import { Community } from "@/components/sections/Community";
+import { Contact } from "@/components/sections/Contact";
 import { FeaturedCourse } from "@/components/sections/FeaturedCourse";
 import { Hero } from "@/components/sections/Hero";
 import { HowItWorks } from "@/components/sections/HowItWorks";
@@ -16,7 +17,8 @@ export default function Home() {
         <FeaturedCourse />
         <HowItWorks />
         <Testimonial />
-        <Commnunity />
+        <Community />
+        <Contact />
       </main>
     </>
   );
