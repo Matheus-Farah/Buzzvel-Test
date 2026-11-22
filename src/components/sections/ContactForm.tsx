@@ -7,7 +7,7 @@ import { validateContact, type ContactErrors, type ContactValues } from "@/lib/v
 type FormStatus = "idle" | "submitting" | "success";
 
 const fieldStyles =
-  "bg-cream border-line placeholder:text-subtle focus:vorder-primary aria-[invalid=true]:border-danger w-full rounded-lg border px-4 py-3 text-sm/6 transition-colors";
+  "bg-cream border-line placeholder:text-subtle focus:border-primary aria-[invalid=true]:border-danger w-full rounded-lg border px-4 py-3 text-sm/6 transition-colors";
 
 export function ContactForm() {
   const [errors, setErrors] = useState<ContactErrors>({});
@@ -84,7 +84,7 @@ export function ContactForm() {
       </FormField>
 
       <FormField id="contact-message" label="Your question" error={errors.message}>
-        <input
+        <textarea
           id="contact-message"
           name="message"
           placeholder="Tell us how we can help..."
@@ -99,7 +99,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="bg-primary hover:bg-primary/90 transistion-colors w-full rounded-lg px-5 py-3 text-sm/6 font-bold text-white disabled:cursor-not-allowed disabled:opacity-70"
+        className="bg-primary hover:bg-primary/90 w-full rounded-lg px-5 py-3 text-sm/6 font-bold text-white transition-colors disabled:cursor-not-allowed disabled:opacity-70"
       >
         {isSubmitting ? "Sending..." : "Send message"}
       </button>
@@ -107,7 +107,7 @@ export function ContactForm() {
       <div role="status" aria-live="polite">
         {status === "success" && (
           <p className="bg-primary-light text-ink rounded-lg px-4 py-3 text-sm/6">
-            Thanks! Your message was sent. We&apos;11 get back to you within 24 hours.
+            Thanks! Your message was sent. We&apos;ll get back to you within 24 hours.
           </p>
         )}
       </div>
